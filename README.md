@@ -14,6 +14,11 @@
   The user should download Node and clone the repository from GitHub.A file system and the inquirer module are also required for this application.This application makes use of Jest when testing is necessary.
   ## Usage
   To respond to inquiries regarding your project, use the command-line tool inquirer.
+  ## Screenshot
+  ![Team Generator HTML Webpage Screenshot](./assets/screenshot.jpeg)
+  ## Video
+  ## Walkthrough Video
+  ![Team Generator Walkthrough Video](./assets/Screen%20Recording%202022-11-15%20at%2011.11.58%20PM.mov)
   ## License  
   This project is covered under the No License license.
   ## Contributing
