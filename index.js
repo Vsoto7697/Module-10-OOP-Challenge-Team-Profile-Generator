@@ -1,6 +1,9 @@
+// team profiles
 const Manager = require("./lib/Manager.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
+
+// node modules
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -8,12 +11,14 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "index.html");
 const generateTeam = require("./src/generatehtmltemplate.js")
 
+// team array
 teamArray = [];
 
 
-
+// function to run app
 function runApp () {
 
+  // create team functions that prompts user with several questions that they must answer in order to generate index.html
   function createTeam () {
     inquirer.prompt([{
       type: "list",
@@ -39,6 +44,7 @@ function runApp () {
   }
 // OOP Functions
 
+// function that allows user to input manager information given selected criteria of prompts
 function addManager() {
   inquirer.prompt ([
     
@@ -74,7 +80,7 @@ function addManager() {
 
 }
 
-
+// function that allows user to input engineer information given selected criteria of prompts
 function addEngineer() {
     inquirer.prompt([
       
@@ -110,6 +116,7 @@ function addEngineer() {
 
   }
 
+  // function that allows user to input intern information given selected criteria of prompts
   function addIntern() {
     inquirer.prompt([
       
@@ -136,7 +143,8 @@ function addEngineer() {
         name: "internSchool",
         message: "What school does your intern attend?"
       }
-
+    
+      // if user answers all the prompts, auto generate answers and create team
     ]).then(answers => {
       const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
       teamArray.push(intern);
@@ -145,14 +153,8 @@ function addEngineer() {
 
   }
 
-  // return to menu with option to add another team member create team
 
-  // Would you like to add a team member?
-  // Yes || No
-  // If Yes --> Then select an employee role for your new team member: Manager, Engineer, Intern
-  // If No --> Create Team
-
-
+// console log a message to user after user is done generating html document 
 function htmlBuilder () {
     console.log("Thank you for your input! Your Team was created!")
 
