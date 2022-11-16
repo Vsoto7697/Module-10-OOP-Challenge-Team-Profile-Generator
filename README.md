@@ -10,6 +10,8 @@
   * [Credits](#Credits)
   ## Description
   Using the Node.js Inquirer module, this application was developed to generate a team profile based on user input and display the data on a brand-new HTML page with a style sheet.Utilizing Jest, this project demonstrates OOP and TDD.
+  ## Website Deployment
+  To visit please click on link [link](https://vsoto7697.github.io/OOP-Team-Profile-Generator)
   ## Installation
   The user should download Node and clone the repository from GitHub.A file system and the inquirer module are also required for this application.This application makes use of Jest when testing is necessary.
   ## Usage
@@ -29,3 +31,8 @@
   Have questions about this project?  
   GitHub: https://github.com/Vsoto7697  
   Email: Vsoto7697@gmail.com
+
+  ## License
+
+
+  Copyright (c) 2022 Victor Soto
